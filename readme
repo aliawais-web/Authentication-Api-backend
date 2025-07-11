@@ -1,0 +1,25 @@
+# Auth API Backend
+
+## Developer
+Ali Awais
+
+## Tech Stack
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT (Access & Refresh Tokens)
+- bcrypt (Password hashing)
+- nodemailer (Email service for password reset)
+
+---
+
+## Features
+
+- User Registration & Login with hashed passwords
+- JWT Authentication with access and refresh tokens
+- Role-based access control (admin, recruiter, seeker)
+- Password reset via email with secure token link
+- Logout with refresh token invalidation
+- Secure API routes with middleware
+
+---
