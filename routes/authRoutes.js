@@ -5,8 +5,6 @@ import {
   getMe,
   refreshToken,
   logoutUser,
-  forgotPassword, 
-  resetPassword
 } from '../controllers/authController.js';
 
 import { protect, authorizeRoles } from '../middlewares/authMiddleware.js';
@@ -22,7 +20,5 @@ router.get('/admin-only',protect,authorizeRoles('admin'),(req, res) => {
 });
 router.post('/logout', logoutUser);
 router.get('/refresh', refreshToken);
-router.post('/forgot-password', forgotPassword);
-router.put('/reset-password/:token', resetPassword);
 
 export default router;
